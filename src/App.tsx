@@ -3,7 +3,7 @@ import Menu from './components/Menu/menu';
 import MenuItem from './components/Menu/menuItem';
 import SubMenu from './components/Menu/subMenu';
 import Icon from './components/Icon/icon';
-import Button, { ButtonSize, ButtonType } from './components/Button/button';
+import Button from './components/Button/button';
 import { Alert } from './components/Alert/Alert';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -33,7 +33,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <Button btnType={ButtonType.Primary} size={ButtonSize.Small}>click</Button>
+      <Button btnType="primary" size="lg">click</Button>
       <React.Fragment key=".1">
         <Alert
           closable
@@ -44,6 +44,7 @@ function App() {
           closable
           title="this is Danger!"
           type="danger"
+          description='甘相东'
         />
         <Alert
           closable={false}
