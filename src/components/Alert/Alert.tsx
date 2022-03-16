@@ -16,8 +16,17 @@ export interface AlertProps {
   onClose?: () => void,
   /** 是否显示关闭图标 */
   closable?: boolean,
+  /** 自定义class样式 */
   className?: string
 }
+/**
+ * 用于页面中展示重要的提示信息。 点击右侧的叉提示自动消失
+ * ### 引用方法
+ * 
+ * ~~~js
+ * import { Alert } from 'Gump-UI'
+ * ~~~
+ */
 export const Alert: FC<AlertProps> = (props) => {
   const [closed, setClosed] = useState<boolean>(false)
   const {
