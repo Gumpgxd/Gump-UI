@@ -4,11 +4,22 @@ import MenuItem from './components/Menu/menuItem';
 import SubMenu from './components/Menu/subMenu';
 import Icon from './components/Icon/icon';
 import Button from './components/Button/button';
+import AutoComplete from './components/AutoComplete/autoComplete';
 import { Alert } from './components/Alert/Alert';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 
 library.add(fas)
+const handleFetch = (query: string) => {
+  console.log(query)
+  return fetch(`https://api.github.com/search/users?q=${query}`)
+      .then(res => res.json())
+      .then(({ items }) => {
+          console.log(items)
+          const formatItems = items.slice(0, 10).map((item:any) => ({ value: item.login, ...item }))
+          return formatItems
+      })
+}
 
 function App() {
   return (
@@ -52,6 +63,9 @@ function App() {
           type="warning"
         />
       </React.Fragment>
+      <AutoComplete
+            fetchSuggestions={handleFetch}
+        />
     </div>
   );
 }
