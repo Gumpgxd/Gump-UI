@@ -45,7 +45,6 @@ export const AutoComplete: FC<AutoCompleteProps> = (props) => {
   const componentRef = useRef<HTMLDivElement>(null)
   const debouncedValue = useDebounce(inputValue, 300)
   useClickOutside(componentRef, () => { setSuggestions([])})
-
   useEffect(() => {
     if (debouncedValue && triggerSearch.current) {
       setSuggestions([])
