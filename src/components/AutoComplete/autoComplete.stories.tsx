@@ -62,5 +62,5 @@ const SimpleComplete = () => {
     )
 }
 
-storiesOf('AutoComplete Component', module)
+storiesOf('AutoComplete 搜索下拉', module)
     .add('AutoComplete', SimpleComplete)
