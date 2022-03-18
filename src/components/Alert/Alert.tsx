@@ -24,7 +24,7 @@ export interface AlertProps {
  * ### 引用方法
  * 
  * ~~~js
- * import { Alert } from 'Gump-UI'
+ * import { Alert } from 'gump-ui'
  * ~~~
  */
 export const Alert: FC<AlertProps> = (props) => {

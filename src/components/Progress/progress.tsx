@@ -18,15 +18,7 @@ export interface ProgressProps {
  * ### 引用方法
  *
  * ~~~js
- * import { Progress } from 'Gump-UI'
- * ~~~
- */
-/**
- * 页面中最常用的的按钮元素，适合于完成特定的交互
- * ### 引用方法
- * 
- * ~~~js
- * import { Button } from 'Gump-UI'
+ * import { Progress } from 'gump-ui'
  * ~~~
  */
 export const Progress: FC<ProgressProps> = (props) => {

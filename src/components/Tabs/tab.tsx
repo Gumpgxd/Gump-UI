@@ -20,7 +20,7 @@ export interface TabProps {
  * ### 引用方法
  *
  * ~~~js
- * import { Tabs } from 'Gump-UI'
+ * import { Tabs } from 'gump-ui'
  * ~~~
  */
 export const Tabs: React.FC<TabProps> = (props) => {

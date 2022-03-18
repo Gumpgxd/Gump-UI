@@ -24,7 +24,7 @@ export interface AutoCompleteProps extends Omit<InputProps, 'onSelect'> {
  * ### 引用方法
  *
  * ~~~js
- * import { AutoComplete } from 'gumpship-ui'
+ * import { AutoComplete } from 'gump-ui'
  * ~~~
  */
 export const AutoComplete: FC<AutoCompleteProps> = (props) => {

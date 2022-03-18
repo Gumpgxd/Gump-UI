@@ -32,7 +32,7 @@ export const MenuContext = createContext<IMenuContext>({ index: '0' })
  * ### 引用方法
  * 
  * ~~~js
- * import { Menu } from 'Gump-UI'
+ * import { Menu } from 'gump-ui'
  * //然后可以使用 Menu.Item 和 Menu.Submenu 访问选项和子下拉菜单组件
  * ~~~
  */
