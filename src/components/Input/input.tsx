@@ -27,7 +27,7 @@ export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size
  * ### 引用方法
  *
  * ~~~js
- * import { Input } from 'Gump-UI'
+ * import { Input } from 'gump-ui'
  * ~~~
  * 支持 HTMLInput 的所有基本属性
  */

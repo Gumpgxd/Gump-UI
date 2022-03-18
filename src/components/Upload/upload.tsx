@@ -61,7 +61,7 @@ export interface UploadProps {
  * ### 引用方法
  * 
  * ~~~js
- * import { Upload } from 'Gump-UI'
+ * import { Upload } from 'gump-ui'
  * ~~~
  */
 export const Upload: FC<UploadProps> = (props) => {

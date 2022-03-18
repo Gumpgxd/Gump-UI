@@ -20,7 +20,7 @@ export interface IconProps extends FontAwesomeIconProps {
  * ### 引用方法
  *
  * ~~~js
- * import { Icon } from 'Gump-UI'
+ * import { Icon } from 'gump-ui'
  * ~~~
  */
 export const Icon: React.FC<IconProps> = (props) => {
